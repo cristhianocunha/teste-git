@@ -1,19 +1,152 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+
+
+    <link rel="shortcut icon" href="inseto.png" />
 
     <title> SEGUNDA TENTATIVA </title>
 
-    <meta name="description" content="Texte descritivo da pagina"/>
+    <meta name="description" content="Texte descritivo da pagina" />
 
     <meta charset="UTF-8" />
 
-    <meta name="author" content="Cristhiano Cunha"/>
+    <meta name="author" content="Cristhiano Cunha" />
 
     <meta name="viewport" content="width=device-width, initial-scale1.0" />
 
-    
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <script type="text/javascript" src="script.js"> </script>
+
+
+
+
 </head>
+
 <body>
+    <main>
+        <section>
+            <h1> MARVEL </h1>
+
+            <p>A Marvel Comics é uma editora norte-americana de mídias relacionadas.
+                Hoje a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.
+                Em 2009, a The Walt Disney Company, adquiriu a Marvel Entertainment, a empresa mãe da Marvel.
+            </p>
+
+            <p> fonte <a href="https://pt.wikipedia.org/wiki/Marvel_Comics" target="_blank"> wikipedia</a></p>
+        </section>
+        <h2> filmes </h2>
+
+        <div class="bloco-post" id="div1">
+            <img src="imagem/Marvel_Logo.svg.png" alt="Fimes marvel3" title="Filme marvel 3" class="img-post" />
+            <h3> filme 3</h3>
+
+        </div>
+
+        <div class="bloco-post" id="div4">
+
+            <img src="imagem/Marvel_Logo.svg.png" alt="Fimes marvel3" title="Filme marvel 3" class="img-post" />
+            <h3> filme 3</h3>
+
+        </div>
+
+        <form action="#" method="POST">
+
+            <label for="campo1">Nome</label>
+            <input type="text" name="nome" id="campo1" />
+
+            <label for="campo2"> Interesses de estudos </label>
+            <select name="interesses" id="campo2">
+                <option value="1">Vendas</option>
+                <option value="1">Marketing</option>
+            </select>
+
+            <fieldset>
+                <legend> Interesses de estudos </legend>
+
+                <label for="campo31">Vendas</label>
+                <input type="radio" name="interesse2" value="1" id="campo31" />
+
+                <label for="campo32">Marketing</label>
+                <input type="radio" name="interesse2" value="2" id="campo32" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend> interesses de estudos 2 </legend>
+
+                <label for="campo41">Vendas</label>
+                <input type="checkbox" name="interesse3" value="1" id="campo41" />
+
+                <label for="campo42">Marketing</label>
+                <input type="checkbox" name="interesse3" value="2" id="campos42"/>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar o Formulario" />
+
+        </form>
+
+
+        <ul type="circle">
+            <li> item 1</li>
+            <li> item 2</li>
+
+            <!--LIsta Ordenada-->
+        </ul>
+        <ol start="3" type="A">
+            <li> item 1</li>
+            <li> item 2</li>
+
+        </ol>
+
+        <!--LIsta de Definição-->
+        <dl>
+            <dt> Palavra 1</dt>
+            <dd> Explicação da palavra </dd>
+
+
+
+        </dl>
+
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th> MES DA ATIVIDADE</th>
+                    <th> ATIVIDADE</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td colspan="2">Janeiro</td>
+
+                </tr>
+                <tr>
+                    <td>Feveiro</td>
+                    <td rowspan="2">Faculdade</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td> Total de atividade</td>
+                    <td> atividade</td>
+                </tr>
+            </tfoot>
+            </thead>
+
+
+
+        </table>
+
+    </main>
 
 
     <h1> ESSE GIT é LEGAL!</h1>
