@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
 
@@ -26,15 +26,70 @@
 </head>
 
 <body>
-    <main>
+    <header role="banner">
+        <nav role="navigation" aria-level="main navigation">
+            <ul role="menu">
+                <li>
+                    <a href="#" role="menuitem">Home</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Quem somos</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Contato</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Conteúdo</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+    </header>
+
+    <main role="main">
         <section>
+
+            <img src="baby.jpg" alt="Baby yoda" title="Baby yoda" aria-labelledby="description-babyyoda"/>
+
+
+            <p id="description-babyyoda">
+                Grogu (também conhecido como " Baby Yoda " entre os fãs e a mídia) é um personagem da série de televisão
+                original Star Wars Disney + The Mandalorian . Ele é um membro pequeno da mesma espécie alienígena sem
+                nome dos personagens de Star Wars Yoda e Yaddle , com quem compartilha uma forte habilidade na Força .
+                Na série, o protagonista conhecido como " o Mandaloriano " é contratado para rastrear e capturar Grogu
+                para um remanescente do Império Galáctico caído , mas em vez disso, ele se torna seu pai adotivo e o
+                protege dos imperiais. O nome real do personagem não foi revelado até " Capítulo 13: Os Jedi " (lançado
+                em 27 de novembro de 2020), que também explicou que Grogu foi criado no Templo Jedi em Coruscant durante
+                as Guerras Clônicas . Antes disso, o nome oficial do personagem, conforme usado nas legendas e legendas,
+                era " A Criança ".
+            </p>
             <h1> MARVEL </h1>
 
             <p>A Marvel Comics é uma editora norte-americana de mídias relacionadas.
                 Hoje a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.
                 Em 2009, a The Walt Disney Company, adquiriu a Marvel Entertainment, a empresa mãe da Marvel.
             </p>
+            <button aria-label=" acesse o site oficial da Marvel" aria-labelledby="bsite">saber mais </button>
 
+         <script type="text/javascript">
+         var paragrafo = document.getElementById("description-babyyoda");
+         paragrafo.style.color = "red";
+         paragrafo.innerText = "texto mudou";
+            
+
+        
+        </script>
+            <p id="bsite">Site da marvel</p>
+
+
+            <p lang="en">
+                Marvel Comics is a North American publisher of related media.
+                Today Marvel Comics is considered the largest comic book publisher in the world.
+                In 2009, The Walt Disney Company acquired Marvel Entertainment, the parent company of Marvel.
+            </p>
             <p> fonte <a href="https://pt.wikipedia.org/wiki/Marvel_Comics" target="_blank"> wikipedia</a></p>
         </section>
         <h2> filmes </h2>
@@ -81,7 +136,7 @@
                 <input type="checkbox" name="interesse3" value="1" id="campo41" />
 
                 <label for="campo42">Marketing</label>
-                <input type="checkbox" name="interesse3" value="2" id="campos42"/>
+                <input type="checkbox" name="interesse3" value="2" id="campos42" />
 
             </fieldset>
 
@@ -114,23 +169,24 @@
 
 
         <table>
+            <caption> atividades do mês</caption>
             <thead>
                 <tr>
-                    <th> MES DA ATIVIDADE</th>
-                    <th> ATIVIDADE</th>
+                    <th abbr="Mes" scope="col"> MES DA ATIVIDADE</th>
+                    <th abbr="atividade" scope="col"> ATIVIDADE</th>
                 </tr>
             <tbody>
                 <tr>
-                    <td colspan="2">Janeiro</td>
-
+                    <th scope="row">Janeiro</th>
+                    <td>Faculdade</td>
                 </tr>
                 <tr>
-                    <td>Feveiro</td>
-                    <td rowspan="2">Faculdade</td>
+                    <th scope="row">Feveiro</th>
+                    <td>Faculdade</td>
                 </tr>
                 <tr>
                     <td>Março</td>
-
+                    <td>Faculdade</td>
                 </tr>
 
             </tbody>
@@ -153,7 +209,9 @@
 
     <button> Clicck aqui LEGAL</button>
 
-
+    <footer role="contentinfo">
+        &copy; Cristhiano Cunha
+    </footer>
 
 </body>
 
