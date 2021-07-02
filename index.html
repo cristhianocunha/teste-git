@@ -68,19 +68,20 @@
             </p>
             <h1> MARVEL </h1>
 
-            <p>A Marvel Comics é uma editora norte-americana de mídias relacionadas.
-                Hoje a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.
-                Em 2009, a The Walt Disney Company, adquiriu a Marvel Entertainment, a empresa mãe da Marvel.
-            </p>
-            <button aria-label=" acesse o site oficial da Marvel" aria-labelledby="bsite">saber mais </button>
+          <p id="texto1">
+            A Marvel Comics é uma editora norte-americana de mídias relacionadas.
+            Hoje a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.
+            Em 2009, a The Walt Disney Company, adquiriu a Marvel Entertainment, a empresa mãe da Marvel.
+          </p>
 
-         <script type="text/javascript">
-         var paragrafo = document.getElementById("description-babyyoda");
-         paragrafo.style.color = "red";
-         paragrafo.innerText = "texto mudou";
-            
+    
+        <button id="botoa1" onclick="atualizacao()"> Atualização do texto</button>
 
-        
+        <script type="text/javascript">
+            function atualizacao(){
+                var texto1 = document.getElementById("texto1");
+                texto1.innerText = "star wars";
+            }
         </script>
             <p id="bsite">Site da marvel</p>
 
