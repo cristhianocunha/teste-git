@@ -1,19 +1,50 @@
-var myNname = "cris"; // string
+// operadores artiméticos 
 
-var age = 27 // number
+// adição +
+var sumTwonNumbers = 1+3
+console.log(sumTwonNumbers)
+//subtração -
+var subTwonNumbers = 1-3
+console.log(subTwonNumbers)
+// multiplicação *
+var mulTwonNumbers = 2*3
+console.log(mulTwonNumbers)
+// divição /
+var divTwonNumbers = 2/2
+console.log(divTwonNumbers)
+// módulo ou resto de uma divição %
+console.log(8%3)
+// incremento ++
+var num = 1;
+console.log(++num)
+// decremento --
+var num2 = 2;
+console.log(--num2)
+//operação de atribuição
+// = atribuição
 
-var height = 1.70
 
-null
-undefined
-console.log(typeof myNname);
-var isStudent = false //boolean
+// atribuição de soma
+var x = 1
+var y = 3
 
-// objeto, array e function
+console.log(x+=y);
+console.log(x-=y);
+console.log(x*=y);
+console.log(x/=y);
+console.log(x%=y);
 
-var person =[
-    "name": "Cris"
-    "age": 27
-]
+// Operadores de comparação
+// ==
+// ===
+// !=
+// < ou >
+// > ou >=
 
-console.log(typeof myNname);
+// Operadores Lógicos
+
+// e && -> AND
+// Ou || -> O
+
+
+
